@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Publicacion {
+ public class Publicacion {
     private static int consecutivo = 1;
     private int codigo;
     private String titulo;
