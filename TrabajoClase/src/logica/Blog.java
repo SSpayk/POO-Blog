@@ -1,7 +1,6 @@
 package logica;
 
 import java.time.LocalDateTime;
-import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -57,7 +56,7 @@ public class Blog {
     }
 
     public String obtenerPublicacion(int codigoPublicacion) throws Exception {
-        revisarPublicacionExistente(codigoPublicacion);   // <-- corregido
+        revisarPublicacionExistente(codigoPublicacion); 
         Publicacion p = publicaciones.get(codigoPublicacion);
         return p.toString();
     }
@@ -77,7 +76,7 @@ public class Blog {
     }
 
     public void borrarComentario(int codigoPublicacion, int posicion) throws Exception {
-        revisarPublicacionExistente(codigoPublicacion);   // <-- typo corregido
+        revisarPublicacionExistente(codigoPublicacion);
         Publicacion p = publicaciones.get(codigoPublicacion);
         p.borrarComentario(posicion);
     }
