@@ -69,9 +69,4 @@ public class Controladora {
 		b.borrarComentario(codigoPublicacion, posicion);
 	}
 	
-	
-	
-	
-	
-
 }
