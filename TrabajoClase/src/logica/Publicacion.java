@@ -59,11 +59,15 @@ import java.util.List;
                            "Título: " + titulo + "\n" +
                            "Autor: " + nombreCreador + "\n" +
                            "Fecha: " + fechaPublicacion + "\n" +
-                           "Texto: " + texto + "\n" +
-                           "Comentarios (" + comentarios.size() + "):\n";
+                           "Texto: " + texto + "\n";
+        if(comentarios.isEmpty()) {
+        	resultado = resultado + "La publicación no tiene comentarios.\n";
+        	return resultado;}
+        resultado = resultado + "Comentarios (" + comentarios.size() + "):\n";
         for (int i = 0; i < comentarios.size(); i++) {
             resultado = resultado + "  " + i + ". " + comentarios.get(i) + "\n";
         }
         return resultado;
     }
-}
+
+ }
